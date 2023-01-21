@@ -1,7 +1,9 @@
 package contracts
 
-import "github.com/matheusF23/pecunia-go/data/models"
+import (
+	"github.com/matheusF23/pecunia-go/domain/entity"
+)
 
 type UserRepository interface {
-	CreateUser(user *models.UserModel) error
+	CreateUser(user *entity.User) error
 }
