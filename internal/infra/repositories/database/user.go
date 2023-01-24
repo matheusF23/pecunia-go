@@ -3,7 +3,7 @@ package database
 import (
 	"database/sql"
 
-	"github.com/matheusF23/pecunia-go/domain/entity"
+	"github.com/matheusF23/pecunia-go/internal/domain/entity"
 )
 
 type UserRepository struct {

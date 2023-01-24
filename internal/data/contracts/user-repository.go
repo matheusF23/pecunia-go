@@ -1,7 +1,7 @@
 package contracts
 
 import (
-	"github.com/matheusF23/pecunia-go/domain/entity"
+	"github.com/matheusF23/pecunia-go/internal/domain/entity"
 )
 
 type UserRepository interface {

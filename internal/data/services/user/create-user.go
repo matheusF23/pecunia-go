@@ -1,8 +1,8 @@
 package services
 
 import (
-	"github.com/matheusF23/pecunia-go/data/contracts"
-	"github.com/matheusF23/pecunia-go/domain/entity"
+	"github.com/matheusF23/pecunia-go/internal/data/contracts"
+	"github.com/matheusF23/pecunia-go/internal/domain/entity"
 )
 
 type CreateUserService struct {
