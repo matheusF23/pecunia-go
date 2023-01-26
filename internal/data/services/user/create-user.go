@@ -9,7 +9,11 @@ type CreateUserService struct {
 	userRepository contracts.UserRepository
 }
 
-func (createUserService *CreateUserService) Execute(user *entity.User) error {
+func NewCreateUserService(ur contracts.UserRepository) *CreateUserService {
+	return &CreateUserService{userRepository: ur}
+}
+
+func (createUserService *CreateUserService) ExecuteCreateUser(user *entity.User) error {
 	err := createUserService.userRepository.CreateUser(user)
 	if err != nil {
 		return err
