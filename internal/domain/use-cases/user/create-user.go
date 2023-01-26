@@ -3,5 +3,5 @@ package usecases
 import "github.com/matheusF23/pecunia-go/internal/domain/entity"
 
 type CreateUser interface {
-	Execute(user *entity.User) error
+	ExecuteCreateUser(user *entity.User) error
 }
