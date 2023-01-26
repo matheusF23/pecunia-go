@@ -3,6 +3,7 @@ module github.com/matheusF23/pecunia-go
 go 1.19
 
 require (
+	github.com/go-chi/chi/v5 v5.0.8
 	github.com/lib/pq v1.10.7
 	github.com/mattn/go-sqlite3 v1.14.16
 	github.com/spf13/viper v1.15.0
