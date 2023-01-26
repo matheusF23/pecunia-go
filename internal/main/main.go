@@ -5,6 +5,7 @@ import (
 	"net/http"
 
 	"github.com/matheusF23/pecunia-go/internal/main/configs"
+	"github.com/matheusF23/pecunia-go/internal/main/routes"
 )
 
 func main() {
@@ -12,6 +13,6 @@ func main() {
 	if err != nil {
 		panic(err)
 	}
-	router := configs.SetupRoutes()
+	router := routes.SetupRoutes()
 	http.ListenAndServe(fmt.Sprintf(":%s", configs.GetServerPort()), router)
 }
