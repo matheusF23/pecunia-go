@@ -15,7 +15,7 @@ func NewUserRepository(db *sql.DB) *UserRepository {
 }
 
 func (userRepository *UserRepository) CreateUser(user *entity.User) error {
-	stmt, err := userRepository.Db.Prepare("INSERT INTO users (id, name, email, password) VALUES (?, ?, ?, ?)")
+	stmt, err := userRepository.Db.Prepare("INSERT INTO users (id, name, email, password) VALUES ($1, $2, $3, $4)")
 	if err != nil {
 		return err
 	}
